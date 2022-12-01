@@ -1,10 +1,56 @@
-const api = require('express').Router();
+const express = require('express');
+
+const noteRouter = require('./noteRoutes');
+
+const app = express();
+
+app.use('/note', noteRouter);
+
+module.exports = app;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* const api = require('express').Router();
 const { readAndAppend, readFromFile } = require('../helpers/fsUtils');
 
 
 // Getting the data from the db.json file
 api.get('/', (req, res) => 
-    readFromFile(`./db.json`).then((data) => res.json(JSON.parse(data)))
+    readFromFile(`./db/db.json`).then((data) => res.json(JSON.parse(data)))
 );
 
 //Posting the information for the new notes
@@ -17,7 +63,7 @@ api.post('/', (req, res) => {
             text
         };
     
-        readAndAppend(newNote, './db.json');
+        readAndAppend(newNote, './db/db.json');
 
         const response = {
             status: 'success',
@@ -26,8 +72,9 @@ api.post('/', (req, res) => {
 
         res.json(response);
     } else {
-        res.json('Error in posing note');
+        res.json('Error in posting note');
     }
 
 });
 
+module.exports = api; */
