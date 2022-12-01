@@ -1,4 +1,4 @@
-const express = require('express');
+/* const express = require('express');
 
 const noteRouter = require('./noteRoutes');
 
@@ -7,7 +7,7 @@ const app = express();
 app.use('/note', noteRouter);
 
 module.exports = app;
-
+ */
 
 
 
