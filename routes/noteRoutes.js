@@ -5,7 +5,6 @@ const { readFromFile,
     writeToFile, 
 } = require('../helpers/fsUtils');
 
-
 //Get Route for notes
 
 notes.get('/', (req, res) => {
@@ -30,6 +29,7 @@ notes.get('/:id', (req, res) => {
 });
 
 // DELETE Route for a specific note
+
 notes.delete('/:id', (req, res) => {
     const noteId = req.params.id;
     readFromFile('./db/db.json')
@@ -43,7 +43,6 @@ notes.delete('/:id', (req, res) => {
         res.json(`Item ${noteId} has been deleted 🗑️`);
       });
   });
-
 
 //Post Route for note
 
