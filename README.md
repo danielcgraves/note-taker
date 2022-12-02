@@ -7,7 +7,11 @@
 ### Install requirements include: fs, express, utils, node
 
 ## Usage
-### ![plot](./assets/password-generator-screenshot.png)
+###Screenshots
+### ![plot](./public/assets/screenshots/Note%20Taker%20Index%20Page%20Screenshot.png)
+### ![plot](public/assets/screenshots/Note%20Taker%20Notes%20Page%20Screenshot.png)
+
+### Deployed app on Heroku: (https://daniel-graves-note-taker.herokuapp.com)
 
 
 ## Contributors
